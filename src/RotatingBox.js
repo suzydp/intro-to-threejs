@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 
@@ -55,10 +56,13 @@ class RotatingBox extends Component {
 
   render() {
     return (
-      <div
-        style={{ width: '100vw', height: '100vh' }}
-        ref={rotatingBox => (this.rotatingBox = rotatingBox)}
-      />
+      <div>
+        <div
+          style={{ width: '100vw', height: '100vh' }}
+          ref={rotatingBox => (this.rotatingBox = rotatingBox)}
+        />
+      <Link href="/">Back To Top</Link>
+      </div>
     );
   }
 }
