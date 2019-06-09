@@ -1,6 +1,5 @@
-import React from 'react';
+import React, { Component } from 'react';
 import * as THREE from 'three';
-import { thisTypeAnnotation } from '@babel/types';
 
 class RotatingBox extends React.Component {
 
@@ -8,15 +7,15 @@ class RotatingBox extends React.Component {
     const width = this.rotatingBox.clientWidth;
     const height = this.rotatingBox.clientHeight;
 
-    let scene = new THREE.scene();
+    let scene = new THREE.Scene();
     let camera = new THREE.PerspectiveCamera();
-    let renderer = new thisTypeAnnotation.WebGLRenderer();
+    let renderer = new THREE.WebGLRenderer();
 
     renderer.setSize(width, height);
     this.rotatingBox.appendChild(renderer.domElement);
 
     let geometry = new THREE.BoxGeometry(1, 1, 1);
-    var material = new THREE.MeshBacisMaterial({ color: 0xff000 });
+    var material = new THREE.MeshBacisMaterial({ color: '#cc0000' });
     var cube = new THREE.Mesh(geometry.material);
 
     scene.add(cube);
@@ -24,6 +23,11 @@ class RotatingBox extends React.Component {
     camera.position.x = 0;
     camera.position.y = 0;
     camera.position.z = 4;
+
+    // camera isn't rotate, but cube is rotate
+    cube.position.x = -3;
+    cube.position.y = 0;
+    cube.position.z = 0;
 
     renderer.render(scene, camera);
   }
