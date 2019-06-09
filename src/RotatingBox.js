@@ -10,6 +10,7 @@ class RotatingBox extends Component {
     this.scene = new THREE.Scene();
     this.camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000);
     this.renderer = new THREE.WebGLRenderer();
+    // drag and drop
     this.controls = new OrbitControls(this.camera, this.render.domElement);
 
     this.renderer.setSize(width, height);
@@ -22,6 +23,8 @@ class RotatingBox extends Component {
 
     this.cube = new THREE.Mesh(geometry, material);
     this.scene.add(this.cube);
+    // should call drag and drop in case of called 'this.camera' above
+    this.initializeCamera();
     this.animate(this);
   }
 
