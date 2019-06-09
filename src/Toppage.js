@@ -9,6 +9,7 @@ class TopPage extends Component {
         <p>Let's start WebGL with Three.js</p>
         <ul>
           <li><Link to="/rotating-box">Rotating Box</Link></li>
+          <li><Link to="/dynamic">Dynamic</Link></li>
           <li>More experiments soon...</li>
         </ul>
       </div>
@@ -16,4 +17,4 @@ class TopPage extends Component {
   }
 }
 
-export default TopPage
+export default TopPage;
