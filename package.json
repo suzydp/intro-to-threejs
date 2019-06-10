@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fabienmotte/three-first-person-controls": "^73.0.1",
     "react": "^16.8.6",
+    "react-canvas-stats": "^0.4.0",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",

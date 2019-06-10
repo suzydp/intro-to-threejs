@@ -1003,6 +1003,11 @@
   resolved "https://registry.yarnpkg.com/@csstools/normalize.css/-/normalize.css-9.0.1.tgz#c27b391d8457d1e893f1eddeaf5e5412d12ffbb5"
   integrity sha512-6It2EVfGskxZCQhuykrfnALg7oVeiI6KclWSmGDqB0AiInVrTGB9Jp9i4/Ad21u9Jde/voVQz6eFX/eSg/UsPA==
 
+"@fabienmotte/three-first-person-controls@^73.0.1":
+  version "73.0.1"
+  resolved "https://registry.yarnpkg.com/@fabienmotte/three-first-person-controls/-/three-first-person-controls-73.0.1.tgz#754781c48753d997cff75bee8459f28a4b660f26"
+  integrity sha1-dUeBxIdT2ZfP91vuhFnyiktmDyY=
+
 "@hapi/address@2.x.x":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@hapi/address/-/address-2.0.0.tgz#9f05469c88cb2fd3dcd624776b54ee95c312126a"
@@ -8133,6 +8138,13 @@ react-app-polyfill@^1.0.1:
     regenerator-runtime "0.13.2"
     whatwg-fetch "3.0.0"
 
+react-canvas-stats@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/react-canvas-stats/-/react-canvas-stats-0.4.0.tgz#a634727c23406c2517c39574251e099e919c3b2d"
+  integrity sha512-WeMGDmC8ZjWYEryUatXN99HdUEwKMCIKPfTb1VPsZG0k8nThNko+q5avvbdxQc0IlN4B2TK0KoEjZRgJP+w/Mg==
+  dependencies:
+    window-or-global "^1.0.1"
+
 react-dev-utils@^9.0.1:
   version "9.0.1"
   resolved "https://registry.yarnpkg.com/react-dev-utils/-/react-dev-utils-9.0.1.tgz#5c03d85a0b2537d0c46af7165c24a7dfb274bef2"
@@ -10177,6 +10189,11 @@ wide-align@^1.1.0:
   integrity sha512-QGkOQc8XL6Bt5PwnsExKBPuMKBxnGxWWW3fU55Xt4feHozMUhdUMaBCk290qpm/wG5u/RSKzwdAC4i51YigihA==
   dependencies:
     string-width "^1.0.2 || 2"
+
+window-or-global@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/window-or-global/-/window-or-global-1.0.1.tgz#dbe45ba2a291aabc56d62cf66c45b7fa322946de"
+  integrity sha1-2+RboqKRqrxW1iz2bEW3+jIpRt4=
 
 wordwrap@~0.0.2:
   version "0.0.3"
