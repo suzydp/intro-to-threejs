@@ -9,6 +9,7 @@ class RotatingBox extends Component {
     const height = this.rotatingBox.clientHeight;
 
     this.scene = new THREE.Scene();
+    // new THREE.PerspectiveCamera( 70, window.innerWidth / window.innerHeight, 1, 1000 );
     this.camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000);
     this.renderer = new THREE.WebGLRenderer();
     // drag and drop
